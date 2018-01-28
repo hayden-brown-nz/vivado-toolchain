@@ -21,5 +21,6 @@ if [ ! -d  $VIVADO_TOOLCHAIN_INSTALLATION_DIR ] ; then
     echo "Installing Xilinx Vivado toolchain..."
     mkdir -p $VIVADO_TOOLCHAIN_INSTALLATION_DIR
     $VIVADO_TOOLCHAIN_INSTALLER_DIR/xsetup -b Install -a XilinxEULA,3rdPartyEULA,WebTalkTerms -c /vivado-toolchain/vivado-config.conf
+    rm -rf $VIVADO_TOOLCHAIN_INSTALLER_DIR
 fi
 
